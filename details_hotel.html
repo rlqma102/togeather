@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/app_details.css">
+    <!-- <link rel="stylesheet" href="css/app2.css"> -->
+    <!-- fabicon -->
+    <link rel="icon" href="favicon.ico">
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 네브바 -->
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+            <a href="#" class="navbar-brand">TO GAE THER<br><span class="kr-logo">투개더</span></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">여 행</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">식 당</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">카 페</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">더보기</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">회원가입</a>
+                            <a href="#" class="dropdown-item">로그인</a>
+                            <a href="#" class="dropdown-item">마이페이지</a>
+                            <a href="#" class="dropdown-item">Q&A</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- 상세 페이지 제목 -->
+        <div class="title">
+            <h1>JS 애견 풀빌라</h1>
+            <h5 class="title_small">애견의, 애견에 의한, 애견을 위한 -JS PET POOLVILLA-</h5>
+        </div>
+
+        <!-- 상세 페이지 콘텐츠 -->
+            <!-- 업체 소개글 -->
+            <article>
+                <div class="innercontainer">
+                    <img id="main_image" src="images/JS애견풀빌라_여행.jpg" alt="가게의 모습">
+                    <span id="info_p">
+                        <p><hr>JS 애견 풀빌라는 우리 아이들도 함께 와서 쉴 수 있기에 특별합니다. <br>평범한 일상에서 벗어나 마음껏 뛰어놀고
+                            물놀이도 하며 즐길 수 있는 곳, <br>사랑하는 우리 아이들에게 특별한 장소<b>"JS 애견풀빌라"</b> 를 선물해 보세요.</p>
+                        <p>신나게 뛰어놀고 물놀이도 즐길수 있는 수영장, 피로를 충분히 풀 수 있는 큰 욕조, <br>우리아이들에게 편안함을 선물할 애견용품 까지
+                            방문해 주시는 모든 분들에게 <br>아이들과의 특별한 하루를 선물할 것 입니다.<br><br><br></p>
+                    </span>
+
+                    <!-- 중간에 들어가는 업체 추가 이미지 -->
+                    <img id="js02" src="images/JS애견풀빌라02_여행.jpg">
+                    <img id="js08" src="images/JS애견풀빌라08_여행.jpg">
+
+                    <!-- 예약안내 부분 -->
+                    <div class="reservation">
+                        <h2 id="res01">예약 안내<hr></h2>
+                        <div class="reservation_details">
+                            <h5>시설 안내</h5>
+                            <table>
+                                <tr>
+                                    <th>편의 서비스</th>
+                                    <span id="td1"><td><img id="res_img" src="images/wifi.png">&nbsp인터넷/WIFI</td></span>
+                                    <td><img id="res_img" src="images/pet.png">&nbsp애완동물 동반 가능</td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <th>편의 시설</th>
+                                    <td><img id="res_img" src="images/mart.png">&nbsp편의점</td>
+                                    <td><img id="res_img" src="images/waterful.png">&nbsp수영장(하절기)</td>
+                                    <td><img id="res_img" src="images/parking.png">&nbsp주차장</td>
+                                </tr>
+                            </table>
+
+                            <h5>숙소 정책</h5>
+                            <table>
+                                <div class="longlong">
+                                <tr>
+                                    <th>숙소 정책</th>
+                                <td><b>각 객실별 정책은 숙소 정책과 일부 상이할 수 있습니다.</b></td>
+                                </tr>
+                                
+                                
+                                <tr>
+                                <th>체크인</th>
+                                <td>체크인: 15:00 ~
+                                    체크아웃: ~ 11:00</td>
+                                </tr>
+
+                                <tr>
+                                <th>예약안내</th>
+                                <td>
+                                    <ul>
+                                        <li>예약문의: 02-899-7475</li>
+                                        <li>취소문의: 1577-7011</li>
+                                    </ul>
+                                </td>
+                                </tr>
+
+                                <tr>
+                                <th>바베큐 요금</th>
+                                <td><b>바베큐숯+그릴 이용 :</b> 2인 기준 20,000원 / 1인 추가시 5,000원<br>
+                                    이용장소 : 개별 테라스<br>
+                                    이용시간 : ~21시<br>
+                                    현장결제</td>
+                                </tr>
+                                <tr>
+                                <th>유의사항</th>
+                                <td>보호자 동반없는 미성년자는 예약 및 입실 불가합니다.<br>
+                                    예약시 신청하신 인원이외에 추가인원은 입실이 거부될 수 있습니다.<br><br>
+                                    
+                                    <b>주의사항</b><br>
+                                    전 직원 마스크착용 및 방역 소독 항시 진행<br>
+                                    20시 이후 체크인 시 사전문의 필수<br><br>
+                                
+                                    <b>픽업안내</b><br>
+                                    픽업 불가<br>
+                                    
+                                    유아기준<br>
+                                    영유아 기준인원 포함 및 추가요금 발생/ 최대인원 초과 불가<br>
+                                    1인 20,000원(8세이상) / 10,000원(7세이하) / 24개월 미만 1명 무료<br>
+                                    현장결제
+                                </td>
+                                </tr>
+                            </div>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    <!-- 예약 바로가기 링크 -->
+                    <div class="link">
+                    <a id="res_link"
+                            href="https://booking.ddnayo.com/booking-calendar-status?accommodationId=4728&groupId="
+                            target="_blank"><img id="welshcorgi" src="images/웰시코기.png"><h3>JS 애견풀빌라 예약하러 바로가기</h3></a>
+                    </div>
+            </article>
+            <!-- 사이드바 부분 -->
+            <aside>
+                <h3 class="sub-title">Info</h3>
+                <ul class="sub-menu">
+                    <li><a href="#">경상북도 경주시 천북면 목실길<br> 10-38</a></li>
+                    <li><a href="http://jsresort.kr/">www.jsresort.kr</a></li>
+                    <li><a href="#">24시간</a></li>
+                    <li><a href="#">02-899-7475</a></li>
+                </ul>
+
+                <!-- 사이드바 별점/평점 -->
+                <div class="star">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_half.png">
+                    <h3>4.5/ 5.0</h3>
+                </div>
+
+                <!-- 사이드바 공유하기 버튼 -->
+                <div class="share_button">
+                    <img id="shareTw" src="images/twitter.png" alt="트위터로 공유하기">
+                    <img id="shareFb" src="images/facebook.png" alt="페이스북으로 공유하기">
+                    <img id="shareKs" src="images/kakao.png" alt="카카오톡으로 공유하기">
+                </div>
+            </aside>
+        </div>
+
+        <!-- 지도이미지 들어갈 부분 -->
+        <div class="map">
+            <div class="location-info">
+                <h3 class="location-title">위치<hr></h3>
+            </div>
+            <div class="location-map">
+                <!-- 지도 노드 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1616.4601150534959!2d129.2722906635515!3d35.87547165608152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35665256b4b82a2f%3A0x30fb651346201f26!2zSlPslaDqsqztkoDruYzrnbw!5e0!3m2!1sko!2skr!4v1655879171467!5m2!1sko!2skr" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+        <!-- 리뷰 및 별점 남기기 부분 -->
+
+        <div class="rev">
+            <div class="rev_1">
+            <h3 id="review">방문자 리뷰<hr></h3>
+            <div class="star_icon">
+                <img id="icon_star1" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star2" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star3" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star4" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star5" src="images/star_empty.png" alt="별점남기기">
+            </div>
+            <textarea placeholder="방문하신 리뷰를 작성해 주세요 ." cols="50" rows="10"></textarea>
+            <button class="btn btn-warning add_button">등록하기</button>
+            </div>
+
+            <!-- 사용자 리뷰 -->
+            <div class="rev_table">
+                <article class="reviewlist">
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">비트5조최고, 소형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>4.5 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">강아지를 위한 시설이 잘 되어 있어서 정말 불편함 없이 편안히 쉬다가 올 수 있었어요. 특히 강아지 구급약을 구비해 두신게 인상깊더라구요 정말 안심하고 아이 데리고 다녀올 수 있겠다는 생각이 더더 드는 곳이었습니다. 내년에도 꼭 한번 더 찾아갈게요!</p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">누가에러소리를내었는가, 중형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>4.5 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">저희 아이가 원래 낯선곳에 가면 좀 어색해하거나 구석에 숨는 편인데 거기 계신 직원분들이 워낙 상냥하고 강아지를 잘 다루는 분들이어서 그런지 우리 승냥이도 다른때보다 더 편안하게 머무는것 같은 느낌이었어요 정말 감사합니다.</p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">람쥐다람쥐, 대형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>3.0 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">다 좋았는데 욕실에 머리카락이 좀 엉켜있더라구요 너무 바빠서 못 보고 지나치신것 같아서 그냥 넘어가긴 했지만 조금 찝찝했네요 다음부턴 조금 더 신경써서 청소 해주시면 감사하겠습니다. </p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">컴터바꿀래, 대형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>4.5 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">침구가 진짜 좋아요 이불 완전 폭신폭신 보들보들 뽀송뽀송 너무너무너무너무 좋았어요! 객실 청소상태도 너무 좋았습니다. 룸서비스로 샌드위치 시켜먹었는데 음식도 정말 맛있어요 </p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+        <!----------------------------------------스크립트---------------------------------------------------->
+        <!-- 공유기능 아이콘 스크립트 -->
+        <script>
+            //트위터
+            const btnShareTw = document.querySelector('#shareTw');
+            btnShareTw.addEventListener('click', () => {
+                const sendText = 'JS 애견 풀빌라 상세페이지';
+                const pageUrl = 'details_hotel.html';
+                window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);
+            })
+
+            //페이스북
+            const btnShareFb = document.querySelector('#shareFb');
+            btnShareFb.addEventListener('click', () => {
+                const pageUrl = 'details_hotel.html';
+                window.open(`http://www.facebook.com/sharer/sharer.php?u=${pageUrl}`);
+            })
+
+            //카카오
+            Kakao.init('59ee0cc626bbabbcc09123a6f5e5fa24');
+
+            const btnShareKs = document.querySelector('#shareKs');
+
+            btnShareKs.addEventListener('click', () => {
+                Kakao.Story.share({
+                    url: 'www.daum.net',
+                    text: '카카오스토리로 공유 합니다.'
+                });
+            })
+
+
+        //업체 이미지 애니메이션 효과
+        $(function () {
+            $("#js02").delay(5000).animate({
+                marginLeft: "270px"
+            }, 8000, function () {});
+
+            $("#js08").delay(3000).animate({
+                marginRight: "270px",
+            }, 5000);
+
+
+            $(".page-title").animate({
+                    marginRight: "100px",
+                }, 2000)
+                .animate({
+                    marginLeft: "250px"
+                }, 2000)
+                .animate({
+                    marginLeft: "0px"
+                }, 2000);
+
+            //별점남기기
+            $("#icon_star1").on("click", function() {
+                if($("#icon_star1").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1").attr("src", "images/star_half.png");
+                } else {
+                    $("#icon_star1").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star2").on("click", function() {
+                if($("#icon_star2").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1").attr("src", "images/star_ful.png");
+                    $("#icon_star2").attr("src", "images/star_half.png");
+                } else {
+                    $("#icon_star2").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star3").on("click", function() {
+                if($("#icon_star3").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2").attr("src", "images/star_ful.png"); 
+                    $("#icon_star3").attr("src", "images/star_half.png");
+                } else {
+                    $("#icon_star3").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star4").on("click", function() {
+                if($("#icon_star4").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2, #icon_star3").attr("src", "images/star_ful.png");
+                    $("#icon_star4").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star4").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star5").on("click", function() {
+                if($("#icon_star5").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2, #icon_star3, #icon_star4").attr("src", "images/star_ful.png");
+                    $("#icon_star5").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star5").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+        </script>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <p class="contact">1599-5319</p>
+        <p>평일 10:00 - 18:00</p>
+        <p class="info">상호명: 투개더</p>
+        <p class="info">주소: 서울특별시 강남구 테헤란로 415</p>
+        <p class="info">이메일: togaether@bit.camp</p>
+    </footer>
+</body>
+
+</html>

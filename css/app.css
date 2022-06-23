@@ -1,0 +1,449 @@
+/* Main Page Background Image */
+.mainBg {
+    background-image: url('../images/main.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* navbar */
+#mainNavbar {
+    background-color: #F7AD60;
+    font-weight: 300;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.mainBg #mainNavbar {
+    background-color: #f7ae6000;
+    /* font-weight: 300;
+    width: 1080px;
+    margin: 0 auto; */
+}
+
+@media (max-width: 1100px) {
+    #mainNavbar {
+        margin: 0;
+        width: auto;
+    }
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.25s, text-shadow 0.25s, transform 0.25s;
+    margin-right: 15px;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+    text-shadow: 0 0.5em 0.5em -0.4em darkgray;
+    transform: translateY(-0.1em);
+    cursor: pointer;
+}
+
+#mainNavbar .navbar-brand {
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.kr-logo {
+    font-size: 1.2rem;
+}
+
+/* search bar */
+.search-box {
+    width: 1050px;
+    margin: 0 auto;
+    top: 70px;
+}
+
+.search-container {
+    height: 2.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid #e6e6e6;
+    background-color: #f8f8f8;
+    padding: 0;
+}
+
+.search-input {
+    height: 100%;
+    padding-left: 10px;
+    position: relative;
+}
+
+.search-input input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    background: none;
+}
+
+.search-input form {
+    height: 100%;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    width: 25px;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    right: 9px;
+}
+
+.search-img {
+    width: 100%;
+}
+
+/* Main Page contents */
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    padding-top: 550px;
+}
+
+.category {
+    font-size: 1.3rem;
+    color: #777;
+    padding-left: 20px;
+}
+
+.category img {
+    width: 50px;
+}
+
+.categoryText {
+    display: inline;
+}
+
+/* carousel */
+.main-carousel {
+    margin-bottom: 30px;
+}
+
+.mainSlides {
+    height: 100%;
+    display: none;
+}
+
+.mainSlide-div {
+    padding: 3px 15px;
+}
+
+.main-carousel img {
+    width: 100%;
+    height: 177px;
+}
+
+a {
+    text-decoration: none;
+}
+
+figcaption {
+    background-color: rgba(204, 204, 204, 0.5);
+    color: #000;
+    padding: 3px;
+    text-align: center;
+}
+
+/* pointer */
+.pointer {
+    position: absolute;
+    width: 1220px;
+    top: 680px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+@media (max-width: 1220px) {
+    .pointer {
+        width: 1080px;
+    }
+}
+
+/* prev, next button */
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    z-index: 10;
+    color: #bbb;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 10%;
+    /* border-radius: 3px 0 0 3px; */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.fade:not(.show) {
+    opacity: 100;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    line-height: 1;
+    padding: 7px;
+}
+
+footer hr {
+    width: 1080px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact {
+    font-size: 2.2rem;
+    color: orange;
+    margin: 8px 0;
+}
+
+.info {
+    color: gray;
+    line-height: 0.5;
+}
+
+/* Q&A Section */
+.qna-container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.inner-container {
+    width: 70%;
+    margin: 120px auto 50px;
+}
+
+.qna-header h1 {
+    color: #F7AD60;
+}
+
+.sub-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 0;
+}
+
+.search-container .search-input {
+    width: 350px;
+}
+
+/* write button */
+.write_btn {
+    border: none;
+    background: none;
+    padding: auto;
+}
+
+/* Q&A table */
+.qna-table {
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+
+
+/* 리스트 페이지 스타일 적용 */
+body {
+    line-height: 1.7;
+}
+
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.ico {
+    padding-top: 200px;
+    padding-left: 15px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#hotel_icon {
+    width: 100px;
+    height: 100px;
+    float: left;
+
+}
+
+#hotel_ment {
+    width: 1000px;
+    font-weight: bold;
+    margin-top: 58px;
+    margin-left: 130px;
+    color: #f78409;
+}
+
+
+
+/*리스트 타일형 레이아웃 적용*/
+.grid {
+    display: grid;
+    gap: 50px 28px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-bottom: 150px;
+    margin-top: 70px;
+    padding: 0 7px;
+}
+
+.card_img-wrapper img {
+    height: 150px;
+    width: 300px;
+}
+
+.listarea {
+    margin-top: 30px;
+}
+
+
+.card_body {
+    padding-left: 5px;
+}
+
+.card_title {
+    font-weight: bold;
+}
+
+.card_text {
+    font-size: 80%;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.card_img {
+    max-width: 100%;
+    min-height: 165px;
+}
+
+
+#icon_location {
+    width: 27px;
+    line-height: 18px;
+
+}
+
+#icon_comment {
+    width: 25px;
+    line-height: 18px;
+
+}
+
+#icon_heart1,
+#icon_heart2,
+#icon_heart3,
+#icon_heart4,
+#icon_heart5,
+#icon_heart6,
+#icon_heart7,
+#icon_heart8,
+#icon_heart9,
+#icon_heart10,
+#icon_heart11,
+#icon_heart12 {
+    width: 25px;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+
+.comment_heart {
+    margin-left: 120px;
+}
+
+.other {
+    margin-bottom: 10px;
+    border-top: 1px solid gray;
+}
+
+.other_icon {
+    margin-top: 5px;
+}
+
+
+
+#ip {
+    font-size: 13px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 2px;
+}
+
+/* pagination */
+.pagination {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: color 0.25s, text-shadow 0.25s, transform 0.25s;
+}
+
+.pagination a.active {
+    color: #F7AD60;
+    font-weight: bold;
+}
+
+.pagination a:hover:not(.active) {
+    color: #F7AD60;
+    font-weight: bold;
+    text-shadow: 0 0.5em 0.5em -0.4em darkgray;
+    transform: translateY(-0.1em);
+}
+
+
+/* 페이지 소개 반응형 웹 적용 */
+@media screen and (max-width: 600px) {
+    #hotel_ment, .ico {
+        flex-direction: column;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+/*카드 이미지*/
+@media screen and (max-width: 600px) {
+    .card_img {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/*아이콘 위치*/
+@media screen and (max-width: 600px) {
+    .comment_heart {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 350px;
+    }
+}

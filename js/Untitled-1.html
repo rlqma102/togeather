@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<hea<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- fabicon -->
+    <link rel="icon" href="favicon.ico">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+
+    <style>
+        #icon_star1, #icon_star2, #icon_star3,
+        #icon_star4, #icon_star5 {
+         width: 30px;
+         height: 30px;
+     }
+    </style>
+
+</head>
+<body>
+    <div class="star_icon">
+        <img id="icon_star1" src="images/star_empty.png" alt="별점남기기">
+        <img id="icon_star2" src="images/star_empty.png" alt="별점남기기">
+        <img id="icon_star3" src="images/star_empty.png" alt="별점남기기">
+        <img id="icon_star4" src="images/star_empty.png" alt="별점남기기">
+        <img id="icon_star5" src="images/star_empty.png" alt="별점남기기">
+        </div>
+
+        
+        
+        //별점남기기
+        <script>
+        $(function() {
+            $("#icon_star1").on("click", function() {
+                if($("#icon_star1").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star1").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+        $(function() {
+            $("#icon_star2").on("click", function() {
+                if($("#icon_star2").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1").attr("src", "images/star_ful.png");
+                    $("#icon_star2").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star2").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+        $(function() {
+            $("#icon_star3").on("click", function() {
+                if($("#icon_star3").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2").attr("src", "images/star_ful.png"); 
+                    $("#icon_star3").attr("src", "images/star_half.png");{
+                    }
+                } else {
+                    $("#icon_star3").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+        $(function() {
+            $("#icon_star4").on("click", function() {
+                if($("#icon_star4").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2, #icon_star3").attr("src", "images/star_ful.png");
+                    $("#icon_star4").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star4").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+        $(function() {
+            $("#icon_star5").on("click", function() {
+                if($("#icon_star5").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2, #icon_star3, #icon_star4").attr("src", "images/star_ful.png");
+                    $("#icon_star5").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star5").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGAETHER</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- jquery -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <!-- fabicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top main_page_navbar">
+            <a href="main.html" class="navbar-brand">TO GAE THER<br><span class="kr-logo">투개더</span></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">지 도</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">회원가입</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">로그인</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="qna.html" class="nav-link">Q&A</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="listplus">
+            <span>내가 등록한 리뷰</span>
+            <br>
+            <p class="intro">안녕하세요, <span>투개더</span>님!</p>
+        </section>
+        <section>
+            <article class="reviewlist">
+                <div class="row">
+                    <div class="row-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_1IqvoGGzy_K-IpgVqMgz3O1YnFq6BhaLvw&usqp=CAU"
+                            class="img-fluid rounded-start" alt="업체 사진">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text card-header">
+                            <h5 class="card-title">더 왈츠, 서울</h5>
+                            <div class="delbtn">삭제</div>
+                            <div class="modifybtn" data-bs-toggle="modal" data-bs-target="#review-edit">수정</div>
+                            <div class="star">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                <h6>4.5 / 5</h6>
+                            </div>
+                        </div>
+                        <p class="card-text card-content">주말 오후에 갔었는데 손님이 많이 계셨어요~ 애견 미용을 맡기러 오시는 분들도 많았고
+                            반려견과 오신분들도 많았는데 소형견 전문으로 운영되고 있는거같아요!!</p>
+                        <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjdfNCAg%2FMDAxNjM3OTgxOTMzNjk3.0HwfImCg-UexQCTL0zf4qUzRiADE9Fc6cRz4JNoGQl4g.5BwInTMbkQT-9Gs3u1cEusan8XTepkt47kZ26eHjcmkg.JPEG.kjk_0872%2FIMG_9347.jpg&type=a340"
+                            class="img-fluid rounded-start" alt="업체 사진">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text card-header" id="r-list2">
+                            <h5 class="card-title">호텔 카푸치노, 서울</h5>
+                            <div class="delbtn">삭제</div>
+                            <div class="modifybtn" data-bs-toggle="modal" data-bs-target="#review-edit">수정</div>
+                            <div class="star">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                <h6>2 / 5</h6>
+                            </div>
+                        </div>
+                        <p class="card-text card-content">룸이 심하게 작아요ㅠㅠ 침대와 공간은 개모차 겨우 놓을 정도예요ㅠㅠ...</p>
+                        <p class="review-date"><small class="text-muted">게시한 날짜 2021/01/05</small></p>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220429_194%2F1651213041049zrdbi_JPEG%2F26.jpg"
+                            class="img-fluid rounded-start" alt="업체 사진">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text card-header">
+                            <h5 class="card-title">가보자 애견풀빌라, 가평</h5>
+                            <div class="delbtn">삭제</div>
+                            <div class="modifybtn" data-bs-toggle="modal" data-bs-target="#review-edit">수정</div>
+                            <div class="star">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                <h6>4.5 / 5</h6>
+                            </div>
+                        </div>
+                        <p class="card-text card-content">부모님 생신 겸 가족여행으로 반려묘와 함께 간 여행이었는데 숙소마저 너무 좋았습니다 사장님도 너무 친절하시고
+                        객실 내 수영장도 좋았어요 담에 또 방분하고 싶습니다!
+                        </p>
+                        <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="http://appdata.hungryapp.co.kr//images/hatdog/upload/202206/1654665322_M165466532271758222.jpg"
+                            class="img-fluid rounded-start" alt="업체 사진">
+                        <a href="#"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text card-header">
+                            <h5 class="card-title">멍때리자, 인천</h5>
+                            <div class="delbtn">삭제</div>
+                            <div class="modifybtn" data-bs-toggle="modal" data-bs-target="#review-edit">수정</div>
+                            <div class="star">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                <h6>5 / 5</h6>
+                            </div>
+                        </div>
+                        <p class="card-text card-content">전문 제빵사들이 매일 빵을 굽는다는데 먹기 전부터 기대가 됐습니다. 반려동물들도 먹을 수 있는 
+                            수제 간식도 같이 있고 가격도 합리적이에요! 음료도 맛있고 매장이 넒어서 대형견들이랑 가기 좋습니다.</p>
+                        <p class="review-date"><small class="text-muted">게시한 날짜 2021/01/05</small></p>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </article>
+        </section>
+        <div class="modal" tabindex="-1" id="review-edit">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">리뷰 수정</h5>
+                    </div>
+                    <div class="review-modal-body">
+                        <div class="review-info">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_1IqvoGGzy_K-IpgVqMgz3O1YnFq6BhaLvw&usqp=CAU"
+                                alt="업체 사진">
+                            <h5 class="card-title mdf-ctitle">더 왈츠, 서울</h5>
+                        </div>
+                        <div class="star-edit">
+                            <img id="icon_star1" src="images/star_gray.png" alt="평점">
+                            <img id="icon_star2" src="images/star_gray.png" alt="평점">
+                            <img id="icon_star3" src="images/star_gray.png" alt="평점">
+                            <img id="icon_star4" src="images/star_gray.png" alt="평점">
+                            <img id="icon_star5" src="images/star_gray.png" alt="평점">
+                            <script>
+                                $(function () {
+                                    $("#icon_star1").on("click", function () {
+                                        if ($("#icon_star1").attr("src") == "images/star_gray.png") {
+                                            $("#icon_star1").attr("src", "images/star_half.png"); {
+                                            }
+                                        } else {
+                                            $("#icon_star1").attr("src", "images/star_ful.png");
+                                        }
+                                    });
+                                });
+
+                                $(function () {
+                                    $("#icon_star2").on("click", function () {
+                                        if ($("#icon_star2").attr("src") == "images/star_gray.png") {
+                                            $("#icon_star1").attr("src", "images/star_ful.png");
+                                            $("#icon_star2").attr("src", "images/star_half.png"); {
+                                            }
+                                        } else {
+                                            $("#icon_star2").attr("src", "images/star_ful.png");
+                                        }
+                                    });
+                                });
+
+                                $(function () {
+                                    $("#icon_star3").on("click", function () {
+                                        if ($("#icon_star3").attr("src") == "images/star_gray.png") {
+                                            $("#icon_star1, #icon_star2").attr("src", "images/star_ful.png");
+                                            $("#icon_star3").attr("src", "images/star_half.png"); {
+                                            }
+                                        } else {
+                                            $("#icon_star3").attr("src", "images/star_ful.png");
+                                        }
+                                    });
+                                });
+
+                                $(function () {
+                                    $("#icon_star4").on("click", function () {
+                                        if ($("#icon_star4").attr("src") == "images/star_gray.png") {
+                                            $("#icon_star1, #icon_star2, #icon_star3").attr("src", "images/star_ful.png");
+                                            $("#icon_star4").attr("src", "images/star_half.png"); {
+                                            }
+                                        } else {
+                                            $("#icon_star4").attr("src", "images/star_ful.png");
+                                        }
+                                    });
+                                });
+
+                                $(function () {
+                                    $("#icon_star5").on("click", function () {
+                                        if ($("#icon_star5").attr("src") == "images/star_gray.png") {
+                                            $("#icon_star1, #icon_star2, #icon_star3, #icon_star4").attr("src", "images/star_ful.png");
+                                            $("#icon_star5").attr("src", "images/star_half.png"); {
+                                            }
+                                        } else {
+                                            $("#icon_star5").attr("src", "images/star_ful.png");
+                                        }
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="text-edit">
+                            <textarea class="review-textarea" name="" id="" rows="10">주말 오후에 갔었는데 손님이 많이 계셨어요~ 애견 미용을 맡기러 오시는 분들도 많았고 
+반려견과 오신분들도 많았는데 소형견 전문으로 운영되고 있는거같아요!!</textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-footer-btn">
+                            <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal" id="modalbtn">
+                                취소
+                            </button>
+                            <button type="button" class="btn btn-outline-warning my-modifybtn" data-bs-dismiss="modal"
+                                id="modalbtn" onclick="javascript:submit()">
+                                변경
+                                <script>
+                                    function submit() {
+                                        alert('리뷰 수정이 완료되었습니다')
+                                    };
+                                </script>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $(".delbtn").on("click", function (e) {
+                    var delconfirm = confirm('삭제하시겠습니까?');
+                    if (delconfirm) {
+                        $(this).parent().parent().parent().css("display", "none");
+                    };
+                });
+                $(".my-modifybtn").on("click", function(){
+                var mdfText = $(this).parent().parent().prev().children().eq(2).children().eq(0),
+                    newText = $(this).parent().parent().parent().parent().parent().prev().children().eq(0).children().eq(0).children().eq(1).children().eq(1);
+                newText.text(mdfText.val());
+            });
+            });
+        </script>
+    </main>   
+</body>
+</html>

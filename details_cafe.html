@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/app_details.css">
+    <!-- <link rel="stylesheet" href="css/app2.css"> -->
+    <!-- fabicon -->
+    <link rel="icon" href="favicon.ico">
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 네브바 -->
+    <header>
+        <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+            <a href="#" class="navbar-brand">TO GAE THER<br><span class="kr-logo">투개더</span></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">여 행</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">식 당</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">카 페</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">더보기</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">회원가입</a>
+                            <a href="#" class="dropdown-item">로그인</a>
+                            <a href="#" class="dropdown-item">마이페이지</a>
+                            <a href="#" class="dropdown-item">Q&A</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- 상세 페이지 제목 -->
+        <div class="title">
+            <h1>테일더블루</h1>
+            <h5 class="title_small">반려동물과 여유로운 휴식</h5>
+        </div>
+
+        <!-- 상세 페이지 콘텐츠 -->
+            <!-- 업체 소개글 -->
+            <article>
+                <div class="innercontainer">
+                    <img id="main_image" src="images/테일더블루.jpg" alt="가게의 모습">
+                    <span id="info_p">
+                        <p><hr>2021년 5월 13일에 오픈한 카페입니다. <br>반려동물과 함께 즐길 수 있는 반려견 동반카페 <b>테일더블루</b> <br>커피와 식사, 펍은 물론 반려견 식사까지 준비되어 있습니다. 미끄러지지 않는 장판으로 시공한 <br>
+                            넓고 쾌적한 실내공간과 인조잔디도 마련되어 있습니다. 꼭 반려견 동반이 아니어도 괜찮습니다. <br>연인과 함께 아이들과 함께 가족과 함께 언제든 오셔서 즐기다 가세요!<br><br><br></p>
+                    </span>
+
+                    <!-- 중간에 들어가는 업체 추가 이미지 -->
+                    <img id="js02" src="images/테일더블루2.jpg">
+                    <img id="js08" src="images/테일더블루3.jpg">
+
+                    <!-- 예약안내 부분 -->
+                    <div class="reservation">
+                        <h2 id="res01">예약 안내<hr></h2>
+                        <div class="reservation_details">
+                            <h5>시설 안내</h5>
+                            <table>
+                                <tr>
+                                    <th>편의 서비스</th>
+                                    <span id="td1"><td><img id="res_img" src="images/wifi.png">&nbsp인터넷/WIFI</td></span>
+                                    <td><img id="res_img" src="images/pet.png">&nbsp애완동물 동반 가능</td>
+                                    <td>/배변패드구비됨</td>
+                                </tr>
+
+                                <tr>
+                                    <th>편의 시설</th>
+                                    <td><img id="res_img" src="images/parking.png">&nbsp주차장</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <h5>식당 정책</h5>
+                            <table>
+                                <div class="longlong">
+                                <tr>
+                                    <th>식당 정책</th>
+                                <td><b>목줄 없는 반려견 동반은 불가합니다</b></td>
+                                </tr>
+                                
+                                <tr>
+                                <th>영업시간</th>
+                                <td>OPEN: 11:00 ~
+                                    CLOSE: ~ 20:00</td>
+                                </tr>
+
+                                <tr>
+                                <th>예약안내</th>
+                                <td>
+                                    <ul>
+                                        <li>예약문의: 0507-1406-0214</li>
+                                        <li>취소문의: 0507-1406-0214</li>
+                                    </ul>
+                                </td>
+                                </tr>
+
+                                <tr>
+                                <th>메뉴 가격표</th>
+                                <td><b>아메리카노</b><br>
+                                    신선한 원두를 로스팅하여 사용합니다.<br>
+                                    8000원<br>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                <th>유의사항</th>
+                                <td>목줄 없는 반려견 동반은 불가합니다<br>
+                                    예약시 신청하신 인원이외에 추가인원은 입실이 거부될 수 있습니다.<br><br>
+                                    
+                                    <b>주의사항</b><br>
+                                    전 직원 마스크착용 및 방역 소독 항시 진행<br>
+                                    주말 방문시 사전 예약 및 문의 필수<br><br>
+                                    
+                                    <b>반려동물 기준</b><br>
+                                    20kg 이상 대형견 동반 불가<br>
+                                    입질 있는 아이는 입마개 필수로 착용 부탁드립니다.<br>
+                                </td>
+                                </tr>
+                            </div>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- 예약 바로가기 링크 -->
+                    <div class="link">
+                    <a id="res_link"
+                            href="https://www.instagram.com/tailtheblue_official/"
+                            target="_blank"><img id="welshcorgi" src="images/웰시코기.png"><h3>테일더블루 예약하러 바로가기</h3></a>
+                    </div>
+            </article>
+
+            <!-- 사이드바 부분 -->
+            <aside>
+                <h3 class="sub-title">Info</h3>
+                <ul class="sub-menu">
+                    <li><a href="#">경기 고양시 일산서구 하이파크2로 40 금문프라자 9층<br> 10-38</a></li>
+                    <li><a href="https://www.instagram.com/tailtheblue_official/">www.instagram.com/tailtheblue</a></li>
+                    <li><a href="#">11:00~20:00</a></li>
+                    <li><a href="#">0507-1406-0214</a></li>
+                </ul>
+
+                <!-- 사이드바 별점/평점 -->
+                <div class="star">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_ful.png">
+                    <img id="star1" src="images/star_empty.png">
+                    <h3>4.0/ 5.0</h3>
+                </div>
+
+                <!-- 사이드바 공유하기 버튼 -->
+                <div class="share_button">
+                    <img id="shareTw" src="images/twitter.png" alt="트위터로 공유하기">
+                    <img id="shareFb" src="images/facebook.png" alt="페이스북으로 공유하기">
+                    <img id="shareKs" src="images/kakao.png" alt="카카오톡으로 공유하기">
+                </div>
+            </aside>
+        </div>
+
+        <!-- 지도이미지 들어갈 부분 -->
+        <div class="map">
+            <div class="location-info">
+                <h3 class="location-title">위치<hr></h3>
+            </div>
+            <div class="location-map">
+
+                <!-- 지도 노드 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.9825131890734!2d126.76299171563605!3d37.69660972442502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8f03b7e08d13%3A0x2d7476765f2067d8!2z7YWM7J28642U67iU66Oo!5e0!3m2!1sko!2skr!4v1655879692156!5m2!1sko!2skr" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+
+
+
+        <!-- 리뷰 및 별점 남기기 부분 -->
+
+        <div class="rev">
+            <div class="rev_1">
+            <h3 id="review">방문자 리뷰<hr></h3>
+            <div class="star_icon">
+                <img id="icon_star1" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star2" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star3" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star4" src="images/star_empty.png" alt="별점남기기">
+                <img id="icon_star5" src="images/star_empty.png" alt="별점남기기">
+            </div>
+            <textarea placeholder="방문하신 리뷰를 작성해 주세요 ." cols="50" rows="10"></textarea>
+            <button class="btn btn-warning add_button">등록하기</button>
+            </div>
+
+            <!-- 사용자 리뷰 -->
+            <div class="rev_table">
+                <article class="reviewlist">
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">뭘화수목금금금, 대형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>4.5 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">강아지와 함께 즐거운 시간 보내며 맛있는 커피도 마시고 너무너무너무너무너무너무 좋았습니다 즐거운 시간 보내게 해주셔서 감사합니다</p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">부들부들, 소형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>2 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">생각보다 가게가 너무 작고 커피도 그냥 그랬어요 바쁘셔서 그랬는지 사장님께서 요청사항도 잘 안들어 주시고 주문 자꾸 깜빡하시고 기다린 시간도 많아서 저는 그냥 그랬어요 두번은 안올 것 같습니다. </p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">카피카피룸룸, 중형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>4.5 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">뷰가 너무 예쁜 카페입니다. 사람이 많아서 조금 시끄럽긴 했지만 음료도 맛있고 디저트도 너무 맛있어서 기분이 좋았어요 </p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                    <div class="row rev_container">
+                        <div class="card-body">
+                            <div class="card-text card-header">
+                                <h5 class="card-title">아바라, 소형견</h5>
+                                <div class="rev_star">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="별점">
+                                    <h6>4.5 / 5</h6>
+                                </div>
+                            </div>
+                            <p class="card-text card-content">아이들과 강아지 데리고 함께 쉬러 갔어요. 한가한 시간에 가서 그런지 너무 쾌적하고 좋았어요. 특히 당근케익이 너무 맛있어서 집에와서 계속 생각나더라구요 . 아이들과 다음에도 한번 더 갈 예정입니다. 주변에도 널리널리 알리고 싶을정도로 좋은 장소네요!</p>
+                            <p class="review-date"><small class="text-muted">게시한 날짜 2022/05/09</small></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+        <!----------------------------------------스크립트---------------------------------------------------->
+        <!-- 공유기능 아이콘 스크립트 -->
+        <script>
+            //트위터
+            const btnShareTw = document.querySelector('#shareTw');
+            btnShareTw.addEventListener('click', () => {
+                const sendText = '테일더블루 상세페이지';
+                const pageUrl = 'details_cafe.html';
+                window.open(`https://twitter.com/intent/tweet?text=${sendText}&url=${pageUrl}`);
+            })
+
+            //페이스북
+            const btnShareFb = document.querySelector('#shareFb');
+            btnShareFb.addEventListener('click', () => {
+                const pageUrl = 'details_cafe.html';
+                window.open(`http://www.facebook.com/sharer/sharer.php?u=${pageUrl}`);
+            })
+
+            //카카오
+            Kakao.init('59ee0cc626bbabbcc09123a6f5e5fa24');
+
+            const btnShareKs = document.querySelector('#shareKs');
+
+            btnShareKs.addEventListener('click', () => {
+                Kakao.Story.share({
+                    url: 'www.daum.net',
+                    text: '카카오스토리로 공유 합니다.'
+                });
+            })
+
+
+        //업체 이미지 애니메이션 효과
+        $(function () {
+            $("#js02").delay(5000).animate({
+                marginLeft: "270px"
+            }, 8000, function () {});
+
+            $("#js08").delay(3000).animate({
+                marginRight: "270px",
+            }, 5000);
+
+
+            $(".page-title").animate({
+                    marginRight: "100px",
+                }, 2000)
+                .animate({
+                    marginLeft: "250px"
+                }, 2000)
+                .animate({
+                    marginLeft: "0px"
+                }, 2000);
+
+            //별점남기기
+            $("#icon_star1").on("click", function() {
+                if($("#icon_star1").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1").attr("src", "images/star_half.png");
+                } else {
+                    $("#icon_star1").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star2").on("click", function() {
+                if($("#icon_star2").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1").attr("src", "images/star_ful.png");
+                    $("#icon_star2").attr("src", "images/star_half.png");
+                } else {
+                    $("#icon_star2").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star3").on("click", function() {
+                if($("#icon_star3").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2").attr("src", "images/star_ful.png"); 
+                    $("#icon_star3").attr("src", "images/star_half.png");
+                } else {
+                    $("#icon_star3").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star4").on("click", function() {
+                if($("#icon_star4").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2, #icon_star3").attr("src", "images/star_ful.png");
+                    $("#icon_star4").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star4").attr("src", "images/star_ful.png");
+                }
+            });
+
+            $("#icon_star5").on("click", function() {
+                if($("#icon_star5").attr("src") == "images/star_empty.png") {
+                    $("#icon_star1, #icon_star2, #icon_star3, #icon_star4").attr("src", "images/star_ful.png");
+                    $("#icon_star5").attr("src", "images/star_half.png"); {
+                    }
+                } else {
+                    $("#icon_star5").attr("src", "images/star_ful.png");
+                }
+            });
+        });
+
+        </script>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <p class="contact">1599-5319</p>
+        <p>평일 10:00 - 18:00</p>
+        <p class="info">상호명: 투개더</p>
+        <p class="info">주소: 서울특별시 강남구 테헤란로 415</p>
+        <p class="info">이메일: togaether@bit.camp</p>
+    </footer>
+</body>
+
+</html>
